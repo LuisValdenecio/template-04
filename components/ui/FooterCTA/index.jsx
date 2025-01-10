@@ -6,16 +6,16 @@ const FooterCTA = () => (
         <div className="custom-screen">
             <div className="max-w-2xl mx-auto text-center">
                 <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                    Get started with Blinder today
+                    {process.env.NEXT_PUBLIC_FOOTER_CTA_TITLE}
                 </h2>
                 <p className="mt-3 text-gray-600">
-                    Hire experts to create your next idea, follow best practices, remove roadblocks, and delivery on schedule.
+                    {process.env.NEXT_PUBLIC_FOOTER_CTA_DESCRIPTION}
                 </p>
                 <NavLink
                     href="/get-started"
                     className="mt-4 inline-block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900"
                 >
-                    Start building
+                    {process.env.NEXT_PUBLIC_FOOTER_CTA_BUTTON_LABEL}
                 </NavLink>
             </div>
         </div>

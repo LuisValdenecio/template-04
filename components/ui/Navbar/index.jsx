@@ -10,9 +10,18 @@ const Navbar = () => {
     const { events } = useRouter();
 
     const navigation = [
-        { title: "Features", path: "#features" },
-        { title: "Our toolkit", path: "#toolkit" },
-        { title: "Testimonials", path: "#testimonials" },
+        { 
+            title: process.env.NEXT_PUBLIC_NAVIGATION_ITEM_ONE,
+            path: "#features" 
+        },
+        { 
+            title: process.env.NEXT_PUBLIC_NAVIGATION_ITEM_TWO,
+            path: "#toolkit" 
+        },
+        {   
+            title: process.env.NEXT_PUBLIC_NAVIGATION_ITEM_THREE,
+            path: "#testimonials" 
+        },
     ]
 
     useEffect(() => {
@@ -35,7 +44,9 @@ const Navbar = () => {
             <nav className={`bg-white w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
                 <div className="custom-screen items-center mx-auto md:flex">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <Brand />
+                        <h1 className='text-xl font-semibold'>
+                        📙 MyBook
+                        </h1>
                         <div className="md:hidden">
                             <button role="button" aria-label="Open the menu" className="text-gray-500 hover:text-gray-800"
                                 onClick={handleNavMenu}
@@ -75,7 +86,7 @@ const Navbar = () => {
                                     href="/get-started"
                                     className="block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
                                 >
-                                    Let's work
+                                    {process.env.NEXT_PUBLIC_FIRST_BUTTON_LABEL}
                                 </NavLink>
                             </li>
                         </ul>
