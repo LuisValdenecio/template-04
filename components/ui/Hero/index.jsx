@@ -12,7 +12,7 @@ const Hero = () => (
                 </p>
                 <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
                     <NavLink
-                        href="/get-started"
+                        href={process.env.NEXT_PUBLIC_STRIPE_PRODUCT_PAYMENT_LINK}
                         className="text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 "
                     >
                         {process.env.NEXT_PUBLIC_FIRST_BUTTON_LABEL}
