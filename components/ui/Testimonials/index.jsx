@@ -46,10 +46,10 @@ const Testimonials = () => {
             <div id="testimonials" className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="max-w-2xl sm:text-center md:mx-auto">
                     <h2 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
-                        {process.env.NEXT_PUBLIC_TESTIMONIAL_TITLE}
+                        {`Veja o que nossos clientes dizem`}
                     </h2>
                     <p className="mt-3 text-gray-600">
-                        {process.env.NEXT_PUBLIC_TESTIMONIAL_DESCRIPTION}
+                        {`Os nossos clientes são a nossa prioridade. Confira os depoimentos de quem já experimentou nossos serviços e produtos. Estamos comprometidos em oferecer a melhor experiência possível, sempre buscando superar as expectativas.`}
                     </p>
                 </div>
                 <div className="mt-12">

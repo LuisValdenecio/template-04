@@ -5,10 +5,10 @@ import Checkbox from "../components/ui/Checkbox";
 
 export default function GetStarted() {
   const servicesItems = [
-    "Mobile development",
-    "UI/UX Design",
-    "web development",
-    "SEO",
+    "Construção Civil",
+    "Logísitca",
+    "Agricultura & Pescas",
+    "Outro",
   ];
 
   return (
@@ -21,17 +21,16 @@ export default function GetStarted() {
           <div className='max-w-lg mx-auto gap-12 justify-between lg:flex lg:max-w-none'>
             <div className='max-w-lg sm:text-center lg:text-left'>
               <h1 className='text-gray-800 text-3xl font-semibold sm:text-4xl'>
-                Talk to a Blinder expert
+                {`Fale com um Especialista`}
               </h1>
               <p className='mt-3'>
-                We are here to help. Get in touch with sales our press team and
-                let us know how we can help, or shoot us an email on{" "}
+                {`Estamos aqui para ajudar você a encontrar a solução ideal para suas necessidades automotivas. Não hesite em nos enviar uma mensagem. `}
                 <a
                   href='mailto:support@blinder.com'
                   target='_blank'
                   rel='noreferrer'
                   className='text-indigo-600 hover:text-indigo-400 font-medium duration-150'>
-                  support@blinder.com.
+                  suporte@voluviamotors.co.ao
                 </a>
               </p>
             </div>
@@ -40,7 +39,7 @@ export default function GetStarted() {
                 onSubmit={(e) => e.preventDefault()}
                 className='space-y-5 font-medium'>
                 <div>
-                  <label>Full name</label>
+                  <label>Nome Completo</label>
                   <Input
                     aria-label='Full name'
                     type='text'
@@ -58,14 +57,14 @@ export default function GetStarted() {
                   />
                 </div>
                 <div>
-                  <label>Message</label>
+                  <label>Messagem</label>
                   <textarea
                     aria-label='Message'
                     required
                     className='w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg'></textarea>
                 </div>
                 <div>
-                  <label>Service</label>
+                  <label>Qual é o seu sector?</label>
                   <ul className='mt-3 flex flex-wrap gap-x-8 gap-y-3 font-normal max-w-md sm:gap-x-16'>
                     {servicesItems.map((item, idx) => (
                       <li key={idx} className='flex gap-x-2 items-center'>
@@ -79,7 +78,7 @@ export default function GetStarted() {
                 </div>
                 <div className='pt-1'>
                   <Button className='w-full text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-600 ring-offset-2 ring-indigo-600 focus:ring'>
-                    Submit
+                    Enviar Messagem
                   </Button>
                 </div>
               </form>

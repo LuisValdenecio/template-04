@@ -4,16 +4,16 @@ const Features = () => {
 
     const features = [
         {
-            title: process.env.NEXT_PUBLIC_FEATURE_01_TITLE,
-            desc: process.env.NEXT_PUBLIC_FEATURE_01_DESCRIPTION
+            title: "Envie-nos o seu pedido",
+            desc: "Envie-nos o seu pedido e nós iremos encontrar o carro ideal para si."
         },
         {
-            title: process.env.NEXT_PUBLIC_FEATURE_02_TITLE,
-            desc: process.env.NEXT_PUBLIC_FEATURE_02_DESCRIPTION
+            title: "Pagamento on-line seguro",
+            desc: "Realize o pagamento do seu carro de forma rápida e segura através da nossa plataforma online."
         },
         {
-            title: process.env.NEXT_PUBLIC_FEATURE_03_TITLE,
-            desc: process.env.NEXT_PUBLIC_FEATURE_03_DESCRIPTION
+            title: "Levantamento do carro",
+            desc: "Após a compra, você pode retirar o seu carro na nossa loja ou solicitar a entrega no local desejado."
         }
     ]
 
