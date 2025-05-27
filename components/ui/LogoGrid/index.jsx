@@ -4,29 +4,34 @@ import sendgrid from '../../../public/logos/sendgrid.svg'
 import layers from '../../../public/logos/layers.svg'
 import adobe from '../../../public/logos/adobe.svg'
 
+import unitel from '../../../public/logos/unitel.PNG'
+import sonangol from '../../../public/logos/sonangol.PNG'
+import paratus from '../../../public/logos/paratus.PNG'
+import endiama from '../../../public/logos/endiama.PNG'
+
 const logos = [
     {
-        src: freshbooks,
+        src: unitel,
         alt: "freshbooks"
     },
     {
-        src: sendgrid,
+        src: sonangol,
         alt: "sendgrid"
     },
     {
-        src: layers,
+        src: paratus,
         alt: "layers"
     },
     {
-        src: adobe,
-        alt: "adobe"
-    },
+        src: endiama,
+        alt: "layers"
+    }
 ]
 
 
 const LogoGrid = () => (
     <div>
-        <div className="custom-screen">
+        <div className="custom-screen mt-20">
             <h2 className="font-semibold text-sm text-gray-600 text-center">
                 {process.env.NEXT_PUBLIC_LOGO_SECTION_TITLE}
             </h2>
@@ -35,7 +40,7 @@ const LogoGrid = () => (
                     {
                         logos.map((item, idx) => (
                             <li key={idx}>
-                                <Image src={item.src} alt={item.alt} />
+                                <Image width={"200"} src={item.src} alt={item.alt} />
                             </li>
                         ))
                     }
