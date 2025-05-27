@@ -6,7 +6,7 @@ const Hero = () => (
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{
                 backgroundImage: "url('/directores.jpg')",
-                filter: "brightness(0.7)"
+                filter: "brightness(0.2)"
             }}
         />
         <div className="relative custom-screen py-28 text-gray-600">
@@ -14,7 +14,7 @@ const Hero = () => (
                 <h1 className="text-4xl text-white font-extrabold mx-auto sm:text-6xl">
                     {process.env.NEXT_PUBLIC_MAIN_TITLE}
                 </h1>
-                <p className="max-w-xl mx-auto text-gray-200">
+                <p className="mx-auto text-gray-200 font-medium text-2xl">
                     {process.env.NEXT_PUBLIC_MAIN_DESCRIPTION}
                 </p>
                 <div className="flex items-center justify-center gap-x-3 font-medium text-sm">

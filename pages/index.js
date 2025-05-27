@@ -7,6 +7,7 @@ import Hero from "../components/ui/Hero";
 import LogoGrid from "../components/ui/LogoGrid";
 import Testimonials from "../components/ui/Testimonials";
 import ToolKit from "../components/ui/ToolKit";
+import Cars from "../components/ui/Cars";
 
 export default function Home() {
   return (
@@ -33,7 +34,9 @@ export default function Home() {
         }
       {
         process.env.NEXT_PUBLIC_FEATURE_GRID_SHOW === "1" && (
-          <ToolKit />
+          <div className="mt-20">
+            <ToolKit />
+          </div>
         )
       }
       </GradientWrapper>
@@ -42,6 +45,9 @@ export default function Home() {
         process.env.NEXT_PUBLIC_TESTIMONIAL_SHOW === "1" && (
           <GradientWrapper>
             <Testimonials />
+            <div className="mt-20">
+              <Cars />
+            </div>
           </GradientWrapper>
         )
       }
