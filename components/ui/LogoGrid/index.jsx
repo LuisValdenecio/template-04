@@ -1,13 +1,8 @@
 import Image from 'next/image'
-import freshbooks from '../../../public/logos/freshbooks.svg'
-import sendgrid from '../../../public/logos/sendgrid.svg'
-import layers from '../../../public/logos/layers.svg'
-import adobe from '../../../public/logos/adobe.svg'
-
-import unitel from '../../../public/logos/unitel.PNG'
-import sonangol from '../../../public/logos/sonangol.PNG'
-import paratus from '../../../public/logos/paratus.PNG'
-import endiama from '../../../public/logos/endiama.PNG'
+import unitel from '../../../public/logos/unitel.png'
+import sonangol from '../../../public/logos/sonangol.png'
+import paratus from '../../../public/logos/paratus.png'
+import endiama from '../../../public/logos/endiama.png'
 
 const logos = [
     {
