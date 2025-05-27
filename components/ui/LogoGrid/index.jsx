@@ -3,6 +3,7 @@ import unitel from '../../../public/logos/unitel.png'
 import sonangol from '../../../public/logos/sonangol.png'
 import paratus from '../../../public/logos/paratus.png'
 import endiama from '../../../public/logos/endiama.png'
+import omatapalo from '../../../public/logos/omatapalo.jpg'
 
 const logos = [
     {
@@ -14,7 +15,7 @@ const logos = [
         alt: "sendgrid"
     },
     {
-        src: paratus,
+        src: omatapalo,
         alt: "layers"
     },
     {
