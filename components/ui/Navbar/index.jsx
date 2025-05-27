@@ -16,7 +16,7 @@ const Navbar = () => {
 
     const navigation = [
         { 
-            title: "Serviços",
+            title: "Como comprar",
             path: "#features" 
         },
         { 
